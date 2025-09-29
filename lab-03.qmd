@@ -107,6 +107,7 @@ Now, we are going to learn how to collaborate using GitHub. Follow these steps:
 
 Type line below here:
 ###Test lines
+###More test
 **To complete these exercise, you have to have at least one contributions from your teammates in your repository.**
 
 # Exercise 3: Creating Descriptive Statistics
