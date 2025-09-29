@@ -9,7 +9,6 @@ execute:
   warning: false
   message: false
 format: 
-  html: default
   pdf: default
 ---
 
@@ -399,14 +398,24 @@ There is website that host a collection of beautiful charts you might want to vi
 
 ```{r, echo=T, eval=T}
 #| label: r graph gallery replication 1
-
+plot(cps[, c("lfstatus", "age")])
 ```
 
 *Visualization replication 2* \AddToHookNext{env/Highlighting/begin}{\small}
 
 ```{r, echo=T, eval=T}
 #| label: r graph gallery replication 2
+# Load ggplot2
+library(ggplot2)
 
+# Create data
+data <- data.frame(
+  cps
+  )
+
+# Barplot
+ggplot(data, aes(x=lfstatus, y=ownchild)) + 
+  geom_bar(stat = "identity")
 ```
 
 # Wrapping up
